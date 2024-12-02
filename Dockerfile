@@ -2,7 +2,7 @@ FROM python:3.10-alpine
 
 RUN apk add --no-cache curl gcc musl-dev bash
 
-RUN pip install flask
+RUN pip install flask flask_cors
 
 WORKDIR /app
 
